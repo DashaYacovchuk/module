@@ -11,10 +11,13 @@ int main() {
 		numbers.push_back(a);
 		if (a > 100) { break; }
 	}
-	int min = *min_element(numbers.begin(), numbers.end());
-	for (int x : numbers)
-		if (x != min)
-			cout << x << " ";
-	cout << endl;
+	for (int x : numbers) {
+		int min1 = *min_element(numbers.begin(), numbers.end());
+		// numbers.pop_back(min);
+		//int min2 = *min_element(numbers.begin(), numbers.end());
+		// numbers.pop_back(min);
+		if (x!= min1)cout << x << " ";
+		
+	}cout << endl;
 	return 0;
 }
