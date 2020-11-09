@@ -2,6 +2,11 @@
 using namespace std;
 
 int main() {
-	cout << "Module" << endl;
+	int a;
+	while (true) {
+		cin >> a;
+
+
+	}
 	return 0;
 }
